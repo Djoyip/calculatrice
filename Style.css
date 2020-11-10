@@ -1,0 +1,128 @@
+*,*::after,*::before {
+    box-sizing: content-box;
+}
+html, body
+{
+    margin:0;
+    padding: 0;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+}
+.calculatrice
+{
+  
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.calculatrice .ecran
+{
+   width: 97,5%;
+   height: 15%;
+   background-color: turquoise;
+   font-size: 50px;
+   text-align: right;
+   border-radius: 5px;
+   /*display: flex;*/
+   /*justify-content: end;*/
+   align-items: flex-end;
+   padding: 5px;
+}
+.calculatrice .buttons
+{
+width:100%;
+height:485px;
+display:flex;
+flex-direction:column;
+}
+.calculatrice .buttons .function
+{
+    width: 97,5%;
+    height: 60px;
+    display: flex;
+}
+.calculatrice .buttons .pav_num
+{
+    width: 100;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+.calculatrice .buttons .pav_num .number
+{
+    width: 270px;
+    height: 100%;
+    display: block;
+    float: left;
+}
+#num
+{
+ background-color: blue;
+}
+#col
+{
+    background-color:green;
+}
+#egal
+{
+    background-color: red;
+    grid-column: span 2;
+
+}
+#autres
+{
+    background-color: hotpink;
+}
+.calculatrice .buttons .pav_num .sign
+{
+    width: 270px;
+    height: 455px;
+    display: block;
+}
+.button
+{
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(5, 50px);
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: #484848;
+    margin: 16px;
+    flex-direction: column;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /*background: linear-gradient(#790144 0%, #50A61F 100%);
+    border-top: 1px solid #91C073;
+    text-shadow:0 -1px 1px #000000;*/
+}
+.button:hover
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background: blue;
+    margin: 16px;
+    flex-direction: column;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+}
+button[data-key="67"]
+{
+    grid-column: span 2 ;
+}
+button[data-key="187"]
+{
+    grid-column: span 4 ;
+}
